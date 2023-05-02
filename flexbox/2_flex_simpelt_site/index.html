@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>Lav layout med flexbox</title>
+    <style>
+     body {
+         background-color: hsl(212, 29%, 19%);
+     }
+     div {
+         border: 2px solid hsl(39, 100%, 50%);
+         border-radius: 5px;
+         max-width: 1200px;
+         margin: 0 auto;
+         background-color: hsl(211, 36%, 84%);
+     }
+     nav {
+         background-color: hsl(212, 29%, 19%);
+         display: flex;
+         justify-content: space-evenly;
+     }
+     a {
+         color: hsl(212, 29%, 79%);
+         text-decoration: none;
+     }
+    </style>
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1>Lav layout med flexbox</h1>
+      </header>
+      <nav>
+        <a href="">Hjem</a>
+        <a href="">Om os</a>
+        <a href="">Priser</a>
+        <a href="">Mission</a>
+        <a href="">Vision</a>
+        <a href="">Fusion</a>
+      </nav>
+      <main>
+          <section>
+              <h2>En overskrift her...</h2>
+              <p>
+                  Lorem Ipsum
+              </p>
+          </section>
+          <section>
+              <h2>En til overskrift</h2>
+              <p>
+                  Lorem ipsum
+              </p>
+          </section>
+      </main>
+      <hr />
+      <footer>
+        <h2>Her er noget fint footer-information ©V1</h2>
+      </footer>
+    </div>
+  </body>
+</html>
