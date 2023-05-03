@@ -19,29 +19,48 @@
      }
      nav {
          background-color: hsl(212, 29%, 19%);
-         display: flex;
-         justify-content: space-evenly;
      }
      a {
          color: hsl(212, 29%, 79%);
          text-decoration: none;
      }
+     .flex-container {
+         display: flex;
+     }
+     main > section {
+         flex-basis: 50%;
+     }
+     .justify-evenly {
+         justify-content: space-evenly;
+     }
+     .justify-center {
+         justify-content: center;
+     }
+     .margin-10 {
+         margin: 10px;
+     }
+     .margin-tb-2 {
+         margin: 2rem 0;
+     }
+     .padding-8 {
+         padding: 8px;
+     }
     </style>
   </head>
   <body>
     <div>
-      <header>
+      <header class="flex-container justify-center margin-tb-2">
         <h1>Lav layout med flexbox</h1>
       </header>
-      <nav>
-        <a href="">Hjem</a>
-        <a href="">Om os</a>
-        <a href="">Priser</a>
-        <a href="">Mission</a>
-        <a href="">Vision</a>
-        <a href="">Fusion</a>
+      <nav class="flex-container justify-evenly padding-8">
+        <a href="#">Hjem</a>
+        <a href="#">Om os</a>
+        <a href="#">Priser</a>
+        <a href="#">Mission</a>
+        <a href="#">Vision</a>
+        <a href="#">Fusion</a>
       </nav>
-      <main>
+      <main class="flex-container margin-10">
           <section>
               <h2>En overskrift her...</h2>
               <p>
@@ -56,7 +75,7 @@
           </section>
       </main>
       <hr />
-      <footer>
+      <footer class="flex-container justify-center">
         <h2>Her er noget fint footer-information ©V1</h2>
       </footer>
     </div>
